@@ -1,6 +1,8 @@
 # smart_traffic_management_system
 The goal is to obtain real-time traffic updates and manage the traffic to avoid road congestions. Cloud computing and Big Data are the primary technologies used in this application. project to improve the traffic infrastructure, improve response time, and reduce traffic congestion. location-based services.
-#Here are some key steps that could be involved in the implementation of this project
+
+# Here are some key steps that could be involved in the implementation of this project.
+
 
 Collect and store data in the cloud: Once the data is captured by the sensors, it needs to be collected and stored in the cloud. Cloud computing provides a scalable and cost-effective platform for storing and processing large amounts of data.
 
