@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:smart_traffic_management_system/pages/home_page.dart';
 import 'package:smart_traffic_management_system/pages/login.dart';
 import 'package:google_fonts/google_fonts.dart';
-
+import 'package:smart_traffic_management_system/utils/routes.dart';
 
 void main() {
   runApp(MyApp());
@@ -15,32 +15,22 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-   
     return MaterialApp(
-      
       // home:home_page(),
       themeMode: ThemeMode.light,
-      theme:ThemeData(
-        fontFamily: GoogleFonts.gideonRoman().fontFamily,
-        primarySwatch: Colors.teal
-        
-
-      ),
+      theme: ThemeData(
+          fontFamily: GoogleFonts.gideonRoman().fontFamily,
+          primarySwatch: Colors.teal),
       darkTheme: ThemeData(
         brightness: Brightness.light,
-         // primarySwatch: Colors.teal
-
+        // primarySwatch: Colors.teal
       ),
+      debugShowCheckedModeBanner: false,
       routes: {
-        "/": (context)=>login(),
-        "/home":(context) => home_page(),
-        "/login":(context) => login(),
+        "/": (context) => login(),
+        MyRoutes.loginroute: (context) => login(),
+        MyRoutes.homeroute: (context) => home_page(),
       },
     );
-
-
   }
 }
-
-
-
